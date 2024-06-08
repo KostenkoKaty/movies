@@ -1,0 +1,10 @@
+<div class="movie-card">
+  <img [src]="movie.image" alt="{{ movie.title }}" class="movie-image">
+  <div class="movie-details">
+    <h2>{{ movie.title }}</h2>
+    <p>{{ movie.overview }}</p>
+    <p>Рейтинг: {{ movie.rating }}</p>
+    <button class="btn-favorite" (click)="addToFavorite(movie)">Додати до улюблених</button>
+    <button class="btn-watch" (click)="addToWatchList(movie)">Додати до списку перегляду</button>
+  </div>
+</div>
